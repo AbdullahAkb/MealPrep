@@ -5,7 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import Splash from '../Screens/Splash/Splash';
 import Welcome from '../Screens/Welcome';
 import Location from '../Screens/Location';
-
+import NotFound from '../Screens/NotFound'
 
 
 
@@ -17,7 +17,7 @@ export default function StackNavigation() {
                 <Stack.Screen name='splash' component={Splash} />
                 <Stack.Screen name='welcome' component={Welcome} />
                 <Stack.Screen name='location' component={Location} />
-
+                <Stack.Screen name='notFound' component={NotFound} />
             </Stack.Navigator>
         </NavigationContainer>
     )

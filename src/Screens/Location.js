@@ -4,7 +4,7 @@ import LocationStyles from '../assets/Styles/LocationStyle'
 import Icon1 from 'react-native-vector-icons/Ionicons'
 import Icon2 from 'react-native-vector-icons/Fontisto'
 import { useNavigation } from '@react-navigation/native'
-import MapImage from '../assets/SVG/Location/mapImage.svg'
+import MapImage from '../assets/SVG/Location/MapImage.svg'
 
 export default function Location() {
 
@@ -28,6 +28,8 @@ export default function Location() {
                 </View>
 
                 <Icon2 name='map-marker-alt' size={20} color={'#05CE91'}
+                    onPress={() => { navigation.navigate('notFound') }}
+
                     style={LocationStyles.map} />
             </View>
 
@@ -35,7 +37,7 @@ export default function Location() {
 
             <TouchableOpacity style={LocationStyles.location}
                 activeOpacity={0.5}
-                // onPress={}
+            // onPress={}
             >
                 <Text style={LocationStyles.text}>
                     Set Location

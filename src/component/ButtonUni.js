@@ -25,7 +25,6 @@ const Styles = StyleSheet.create({
     backgroundColor: '#05CE91',
     alignSelf: 'center',
     position: 'absolute',
-    // top: 680.87,
     borderRadius: 7,
 
 

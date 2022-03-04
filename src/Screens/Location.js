@@ -51,15 +51,7 @@ export default function Location() {
 
             </View>
 
-            {/* <TouchableOpacity style={LocationStyles.location}
-                activeOpacity={0.5}
-            // onPress={}
-            >
-                <Text style={[LocationStyles.text, { fontFamily: 'Nunito-Medium' }]}>
-                    Set Location
-                </Text>
-
-            </TouchableOpacity> */}
+            
         </View>
     )
 }

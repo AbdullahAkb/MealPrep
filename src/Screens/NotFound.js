@@ -12,9 +12,6 @@ export default function NotFound() {
     const navigation = useNavigation();
 
 
-
-
-
     return (
         <View style={{ backgroundColor: '#FFFFFF', flex: 1 }}>
             <TouchableOpacity
@@ -36,7 +33,7 @@ export default function NotFound() {
 
 
             <View style={{ top: 258 }}>
-                <ButtonUni title="Try Another Location" Press={() => navigation.goBack()} />
+                <ButtonUni  title="Try Another Location" Press={() => navigation.goBack()} />
             </View>
 
 

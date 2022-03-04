@@ -6,7 +6,7 @@ import Splash from '../Screens/Splash/Splash';
 import Welcome from '../Screens/Welcome';
 import Location from '../Screens/Location';
 import NotFound from '../Screens/NotFound'
-
+import Available from '../Screens/Available';
 
 
 const Stack = createNativeStackNavigator();
@@ -18,6 +18,7 @@ export default function StackNavigation() {
                 <Stack.Screen name='welcome' component={Welcome} />
                 <Stack.Screen name='location' component={Location} />
                 <Stack.Screen name='notFound' component={NotFound} />
+                <Stack.Screen name='available' component={Available} />
             </Stack.Navigator>
         </NavigationContainer>
     )

@@ -23,6 +23,7 @@ const LocationStyles = StyleSheet.create({
         width: 265,
         left: 37,
         top: 13,
+        
         backgroundColor: '#F2F2F2',
         borderRadius: 7
 
@@ -32,13 +33,15 @@ const LocationStyles = StyleSheet.create({
         left: 55,
         top: 20
     },
-    TextInput:
+    textInput:
     {
         height: 39,
         width: 265,
-        fontSize: 17,
-        textAlign: 'center',
-        color:'#565656',
+        fontSize: 16,
+        color: '#565656',
+        textAlign:'center',
+        fontFamily: 'Nunito-Medium'
+
     },
     location:
     {
@@ -49,17 +52,18 @@ const LocationStyles = StyleSheet.create({
         position: 'absolute',
         top: 680.87,
         borderRadius: 7,
-        
+
 
     },
     text:
     {
-        color:'#FFFFFF',
-        textAlign:'center',
-        top:12,
-        fontSize:18,
-        fontWeight:'500'
-    
+        color: '#FFFFFF',
+        textAlign: 'center',
+        top: 12,
+        fontSize: 18,
+        // fontFamily:'Nunito-Medium'
+        // fontWeight:'500'
+
     }
 })
 

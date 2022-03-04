@@ -1,14 +1,25 @@
-import { View, Text, TextInput, TouchableOpacity } from 'react-native'
+import { View, Text, TextInput, TouchableOpacity, Button } from 'react-native'
 import React from 'react'
 import LocationStyles from '../assets/Styles/LocationStyle'
 import Icon1 from 'react-native-vector-icons/Ionicons'
 import Icon2 from 'react-native-vector-icons/Fontisto'
 import { useNavigation } from '@react-navigation/native'
 import MapImage from '../assets/SVG/Location/MapImage.svg'
+import ButtonUni from '../component/ButtonUni'
+
+
+
+
 
 export default function Location() {
 
     const navigation = useNavigation();
+
+
+    const onpr = () => {
+        navigation.navigate('available')
+    }
+
 
     return (
         <View>
@@ -22,7 +33,7 @@ export default function Location() {
                         // placeholder='Business man colony Rahim Ya.. '
                         placeholderTextColor={'#565656'}
                         defaultValue="Business man colony Rahim Ya.. "
-                        style={LocationStyles.TextInput}
+                        style={LocationStyles.textInput}
 
                     />
                 </View>
@@ -35,15 +46,20 @@ export default function Location() {
 
             <MapImage />
 
-            <TouchableOpacity style={LocationStyles.location}
+            <View style={{position:'absolute',top:700,left:193}}>
+                <ButtonUni title={"Set Location"} Press={onpr} />
+
+            </View>
+
+            {/* <TouchableOpacity style={LocationStyles.location}
                 activeOpacity={0.5}
             // onPress={}
             >
-                <Text style={LocationStyles.text}>
+                <Text style={[LocationStyles.text, { fontFamily: 'Nunito-Medium' }]}>
                     Set Location
                 </Text>
 
-            </TouchableOpacity>
+            </TouchableOpacity> */}
         </View>
     )
 }

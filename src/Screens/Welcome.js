@@ -3,6 +3,7 @@ import React from 'react'
 import WelcomeStyles from '../assets/Styles/WelcomeStyles'
 import WelcomeLogo from '../assets/SVG/Welcome/WelcomeLogo.svg'
 import Area from '../assets/SVG/Welcome/Area.svg'
+import Hair from '../assets/SVG/Welcome/Hair.svg'
 import Icon1 from 'react-native-vector-icons/Fontisto'
 import { useNavigation } from '@react-navigation/native'
 
@@ -35,7 +36,7 @@ export default function Welcome() {
                     to the App!
                 </Text>
             </View>
-
+            <Hair style={{top:292,left:41.4}}/>
             <Area style={WelcomeStyles.area} />
             <View style={{ top: 165 }}>
                 <Text style={WelcomeStyles.check}>

@@ -26,16 +26,17 @@ const WelcomeStyles = StyleSheet.create({
 
     welcome:
     {
-        fontSize: 36,
+        fontSize: 40,
         color: "#07CE92",
-        fontWeight: '400'
+        // fontWeight: '400',
+        fontFamily: 'Hello Valentina'
     },
     intro:
     {
         color: 'black',
         fontWeight: '400',
         fontSize: 25,
-        top: 8,
+        
         left: 5
     },
     area:

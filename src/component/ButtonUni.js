@@ -34,7 +34,7 @@ const Styles = StyleSheet.create({
     color: '#FFFFFF',
     textAlign: 'center',
     top: 12,
-    fontSize: 18,
+    fontSize: 20,
     // fontFamily:'Nunito-Medium'
     // fontWeight:'500'
 

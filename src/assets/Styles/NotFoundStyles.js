@@ -9,7 +9,7 @@ const NotFoundStyles = StyleSheet.create({
     },
     text1:
     {
-        fontFamily: 'DancingScript-Bold',
+        fontFamily: 'Hello Valentina',
         color: '#05CE91',
         fontSize: 40,
         top: 200,

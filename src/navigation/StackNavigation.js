@@ -7,6 +7,14 @@ import Welcome from '../Screens/Welcome';
 import Location from '../Screens/Location';
 import NotFound from '../Screens/NotFound'
 import Available from '../Screens/Available';
+import Login from '../Screens/Login';
+import MainPage from '../Screens/MainPage';
+import Forgot from '../Screens/Forgot';
+import OTP from '../Screens/OTP';
+
+
+
+
 
 
 const Stack = createNativeStackNavigator();
@@ -19,6 +27,11 @@ export default function StackNavigation() {
                 <Stack.Screen name='location' component={Location} />
                 <Stack.Screen name='notFound' component={NotFound} />
                 <Stack.Screen name='available' component={Available} />
+                <Stack.Screen name='login' component={Login} />
+                <Stack.Screen name='forgot' component={Forgot} />
+                <Stack.Screen name='mainpage' component={MainPage} />
+                <Stack.Screen name='otp' component={OTP} />
+
             </Stack.Navigator>
         </NavigationContainer>
     )

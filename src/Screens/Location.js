@@ -1,6 +1,6 @@
 import { View, Text, TextInput, TouchableOpacity, Button } from 'react-native'
 import React from 'react'
-import LocationStyles from '../assets/Styles/LocationStyle'
+import LocationStyles from '../assets/Styles/LocationStyles'
 import Icon1 from 'react-native-vector-icons/Ionicons'
 import Icon2 from 'react-native-vector-icons/Fontisto'
 import { useNavigation } from '@react-navigation/native'

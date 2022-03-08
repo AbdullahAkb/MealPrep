@@ -31,13 +31,13 @@ const OtpStyles = StyleSheet.create({
     underlineStyleBase:
     {
         backgroundColor: '#F2F2F2',
-        marginLeft:10,
+        marginLeft: 10,
         height: 38, width: 32,
-        borderRadius:10,
-        borderColor:'#F2F2F2'
+        borderRadius: 10,
+        borderColor: '#F2F2F2'
 
 
-        
+
     }
 })
 

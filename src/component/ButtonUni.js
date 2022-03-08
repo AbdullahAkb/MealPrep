@@ -7,6 +7,7 @@ export default function ButtonUni(props) {
       <TouchableOpacity style={Styles.location}
         activeOpacity={0.5}
         onPress={() => props.Press()}
+        disabled={props.dis}
       >
         <Text style={[Styles.text, { fontFamily: 'Nunito-Medium' }]}>
           {props.title}

@@ -40,7 +40,7 @@ export default function OTP() {
             />
             <View style={{ top: 230 }}>
                 <ButtonUni
-                    title="Confirm" />
+                    title="Confirm"  Press={()=>{navigation.navigate('newpass')}}/> 
             </View>
 
 

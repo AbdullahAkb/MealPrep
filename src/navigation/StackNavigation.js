@@ -11,9 +11,9 @@ import Login from '../Screens/Login';
 import MainPage from '../Screens/MainPage';
 import Forgot from '../Screens/Forgot';
 import OTP from '../Screens/OTP';
-
-
-
+import NewPass from '../Screens/NewPass';
+import Register from '../Screens/Register'
+import { createDrawerNavigator } from '@react-navigation/drawer'
 
 
 
@@ -31,8 +31,24 @@ export default function StackNavigation() {
                 <Stack.Screen name='forgot' component={Forgot} />
                 <Stack.Screen name='mainpage' component={MainPage} />
                 <Stack.Screen name='otp' component={OTP} />
+                <Stack.Screen name='newpass' component={NewPass} />
+                <Stack.Screen name='register' component={Register} />
 
             </Stack.Navigator>
         </NavigationContainer>
     )
+}
+
+
+const Draw = createDrawerNavigator();
+export function DrawNav() {
+
+    return (
+
+        <Draw.Navigator screenOptions={{ headerShown: false }}>
+
+        </Draw.Navigator>
+
+    )
+
 }

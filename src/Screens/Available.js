@@ -38,7 +38,7 @@ export default function Available() {
           defaultValue='Business man colony Rahim Yar Khan'
 
           style={AvailableStyles.TextInput}
-          onFocus={() => { navigation.navigate('location') }}
+
         />
         <Icon2 name='map-marker-alt' size={20} color="#05CE91"
           style={AvailableStyles.map}
@@ -54,7 +54,10 @@ export default function Available() {
 
       <View>
         <Text style={AvailableStyles.acc}>Don’t have an account?</Text>
-        <TouchableOpacity style={AvailableStyles.Register}>
+        <TouchableOpacity style={AvailableStyles.Register}
+        
+          onPress={() => navigation.navigate('register')}
+        >
           <Text style={{ fontFamily: 'Nunito-Medium', fontSize: 20, bottom: 2, color: '#05CE91' }}>Register</Text>
         </TouchableOpacity>
         <Text style={{ fontFamily: 'Nunito-Medium', fontSize: 20, top: 297, left: 198, color: '#565656' }}>Now.</Text>

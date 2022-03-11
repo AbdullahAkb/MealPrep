@@ -51,7 +51,7 @@ export default function Login() {
             </TouchableOpacity>
 
             <View style={{ top: 280 }}>
-                <ButtonUni title="Login" Press={() => { navigation.navigate("mainpage") }} />
+                <ButtonUni title="Login" Press={() => { navigation.navigate("drawer") }} />
             </View>
             <View style={{ flexDirection: 'row', top: 340, left: 100 }}>
                 <Text style={{ top: 4, left: 82, fontSize: 20, fontFamily: 'Nunito-Medium', color: '#565656' }}>Or</Text>

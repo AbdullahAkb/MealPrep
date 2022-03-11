@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, TextInput, ScrollView, FlatList } from 'react-native'
+import { View, Text, TouchableOpacity, TextInput, ScrollView, FlatList, StatusBar } from 'react-native'
 import React from 'react'
 import MainPageStyles from '../assets/Styles/MainPageStyles'
 import DrawerIcon from '../assets/SVG/MainPage/DrawerIcon.svg'
@@ -17,13 +17,14 @@ import StarRating from 'react-native-star-rating';
 import PlusMini from '../component/PlusMini'
 import MinusMini from '../component/MinusMini'
 import { FoodFlatList } from '../component/FoodFlatList'
+import { useNavigation } from '@react-navigation/native'
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import { MainHeader } from '../component/MainHeader'
 
-
-
-export default function MainPage() {
+export default function MainPage(props) {
 
   const [mode, setMode] = useState(true);
-
+  // const navigation = useNavigation();
 
   const head = () => {
     return (
@@ -38,29 +39,9 @@ export default function MainPage() {
 
   return (
     <View style={{ backgroundColor: '#ffffff', flex: 1 }}>
-
-      <View style={MainPageStyles.header}>
-
-
-        <TouchableOpacity style={{ width: 25, top: 20, left: 26.75 }}>
-
-          <DrawerIcon />
-        </TouchableOpacity>
-
-        <View style={{ top: 16, left: 45 }}>
-          <Text style={{ color: '#05CE91', fontSize: 18, fontFamily: 'Nunito-Medium' }}>
-            Business Man colony
-          </Text>
-          <Text style={{ fontFamily: 'Nunito-Medium', fontSize: 15 }}>
-            Rahim Yar Khan
-          </Text>
-        </View>
-
-        <TouchableOpacity style={{ height: 18, width: 20, top: 25, left: 180 }}>
-          <Recp />
-        </TouchableOpacity>
-
-      </View >
+      <StatusBar
+        backgroundColor={"white"} />
+      <MainHeader Press={() => props.navigation.openDrawer()} />
       {/* date */}
       <View style={{ height: 74, width: 360, top: 17, flexDirection: 'row' }}>
         <View style={{ backgroundColor: '#F5FFFC', height: 50, width: 50, borderRadius: 5, top: 10, left: 10, alignItems: 'center', paddingTop: 7 }}>

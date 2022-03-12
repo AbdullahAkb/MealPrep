@@ -8,7 +8,7 @@ import Miniheader from './src/component/Miniheader'
 
 import Favourites from './src/Screens/Favourites'
 import Fav from './src/component/Fav'
-
+import VoucherComp from './src/component/VoucherComp'
 
 
 export default function App() {
@@ -17,5 +17,6 @@ export default function App() {
     // <Miniheader />
     // <Favourites />
     // <Fav />
+    // <VoucherComp />
   )
 }

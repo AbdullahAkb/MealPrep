@@ -44,7 +44,9 @@ export default function Profile() {
           <TouchableOpacity style={{
             backgroundColor: '#05CE91', width: 20, height: 20, left: 98,
             borderRadius: 15, bottom: 35
-          }}>
+          }}
+          
+          >
             <Icon2 name='camera' color={"white"} size={10}
               style={{ alignSelf: 'center', top: 4 }}
             />
@@ -89,7 +91,9 @@ export default function Profile() {
         <TouchableOpacity style={{
           backgroundColor: 'white', width: 25, height: 25, left: 210,
           borderRadius: 15, bottom: 35, top: 19,
-        }}>
+        }}
+        onPress={()=>navigation.navigate('NewPass')}
+        >
           <Icon3 name='pencil-square-o' size={15} color="#949494"
             style={{ alignSelf: 'center', top: 6 }}
           />

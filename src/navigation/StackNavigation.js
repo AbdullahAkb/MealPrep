@@ -24,7 +24,11 @@ import Orders from '../Screens/Orders';
 import OrdersDrawer from '../assets/SVG/MainPage/OrdersDrawer.svg'
 import Profile from '../Screens/Profile';
 import Icon2 from 'react-native-vector-icons/Feather'
-
+import NewPassword from '../Screens/NewPassword';
+import Vouchers from '../Screens/Vouchers'
+import Voucherslogo from '../assets/SVG/Drawer/Voucherslogo.svg'
+import HelpCenter from '../Screens/HelpCenter'
+import Icon3 from 'react-native-vector-icons/AntDesign'
 
 const Stack = createNativeStackNavigator();
 export default function StackNavigation(props) {
@@ -43,6 +47,7 @@ export default function StackNavigation(props) {
 
                 <Stack.Screen name='otp' component={OTP} />
                 <Stack.Screen name='newpass' component={NewPass} />
+                <Stack.Screen name='NewPass' component={NewPassword} />
                 <Stack.Screen name='register' component={Register} />
 
                 <Stack.Screen name='drawer' component={DrawNav} />
@@ -110,6 +115,33 @@ export function DrawNav() {
                         <Icon2 name="user" size={20} color={"#05CE91"} />)
 
 
+                }} />
+            <Draw.Screen name='Vouchers' component={Vouchers}
+                options={{
+                    headerShown: false,
+                    drawerActiveBackgroundColor: "white",
+                    drawerActiveTintColor: 'white',
+                    drawerLabelStyle: { fontSize: 16, fontFamily: 'Nunito-Medium', left: -16 },
+                    drawerIcon: ({ color }) => (
+                        <View style={{ paddingLeft: 4 }}>
+                            <Voucherslogo />
+                        </View>
+                    )
+
+
+                }} />
+
+            <Draw.Screen name='HelpCenter' component={HelpCenter}
+                options={{
+                    headerShown: false,
+                    drawerActiveBackgroundColor: "white",
+                    drawerActiveTintColor: 'white',
+                    drawerLabelStyle: { fontSize: 16, fontFamily: 'Nunito-Medium', left: -16 },
+                    drawerIcon: ({ color }) => (
+                        <Icon3 name="questioncircleo" size={19} color={"#05CE91"} 
+                        
+                        style={{left:2}}/>
+                    )
                 }} />
         </Draw.Navigator>
 
